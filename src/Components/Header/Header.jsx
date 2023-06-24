@@ -4,7 +4,7 @@ import { Nav, NavMobile } from './index';
 const Header = () => {
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-
+    useEffect(() => {
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
             if (window.scrollY < lastScrollY) {
@@ -17,7 +17,7 @@ const Header = () => {
         }
     };
 
-    useEffect(() => {
+   
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', controlNavbar);
             // cleanup function

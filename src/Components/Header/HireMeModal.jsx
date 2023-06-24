@@ -9,9 +9,7 @@ const selectOptions = [
     'UI/UX Design',
     'Branding',
 ];
-function Button({ title }) {
-    return <button>{title}</button>;
-}
+
 
 
 

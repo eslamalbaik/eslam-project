@@ -19,19 +19,18 @@ const NavMobile = () => {
                 <button onClick={() => setisOpen(false)} className='absolute top-6 left-6'>
                     <AiOutlineClose size={22} className="text-black" />
                 </button>
-                <li >
-                    <a className='cursor-pointer hover:text-[#C938AF] transition-all delay-200  ' href='#'> Home</a>
+                <li className='ml-6 cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200'>
+                   Home
                 </li>
-                <li>
-                    <a className='cursor-pointer hover:text-[#C938AF]  transition-all delay-200 ' href='#'>About </a>
+                <li className='cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200  '>
+                 About 
                 </li>
-                <li>
-                    <a className='cursor-pointer hover:text-[#C938AF]  transition-all delay-200 ' href='#'> Projects</a>
+                <li className='cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200  '>
+                    Projects
                 </li>
-                <li>
-                    <a className='cursor-pointer hover:text-[#C938AF]  transition-all delay-200 ' href='#'> Contact</a>
+                <li className='cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200  '>
+                Contact
                 </li>
-
             </ul>
         </nav >
 

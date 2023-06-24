@@ -1,7 +1,6 @@
 import React from 'react'
 import ItemProject from "./ItemProject"
 import RItemProject from "./RItemProject"
-import ItemProject2 from './ItemProject2'
 
 const Projects = () => {
     return (

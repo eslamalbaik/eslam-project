@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import LanguageSwitcher from '../../i18n/LanguageSwitcher';
 import HireMeModal from './HireMeModal';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import {FiMoon ,FiSun} from  'react-icons/fi';
@@ -24,19 +23,19 @@ const Nav = () => {
     return (
         <nav className='hidden lg:flex lg:items-center font-semibold text-[17px]' >
             <ul className='text-black lg:flex space-x-6 items-center text-[18px] leading-6 font-normal lg:mr-32'>
-                <li className='ml-6 '>
-                    <a className='cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200  ' href='#'> Home</a>
+                <li className='ml-6 cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200'>
+                   Home
                 </li>
-                <li>
-                    <a className='cursor-pointer  dark:text-ternary-light hover:text-[#C938AF]  transition-all delay-200 ' href='#'>About </a>
+                <li className='cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200  '>
+                 About 
                 </li>
-                <li>
-                    <a className='cursor-pointer  dark:text-ternary-light hover:text-[#C938AF]  transition-all delay-200 ' href='#'> Projects</a>
+                <li className='cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200  '>
+                    Projects
                 </li>
-                <li>
-                    <a className='cursor-pointer   dark:text-ternary-light hover:text-[#C938AF]  transition-all delay-200 ' href='#'> Contact</a>
+                <li className='cursor-pointer   dark:text-ternary-light  hover:text-[#C938AF] transition-all delay-200  '>
+                Contact
                 </li>
-                <li>
+                <li >
                     <div className="hidden sm:flex  dark:text-ternary-light justify-between items-center flex-col md:flex-row">
                         <div className="hidden md:flex">
                             <span
