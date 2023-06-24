@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* morph image animation in Hero Component */
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 45% 70%/60% 45% 70% 40%;
+    -webkit-border-radius: 60% 40% 45% 70%/60% 45% 70% 40%;
+    -moz-border-radius: 60% 40% 45% 70%/60% 45% 70% 40%;
+    -ms-border-radius: 60% 40% 45% 70%/60% 45% 70% 40%;
+    -o-border-radius: 60% 40% 45% 70%/60% 45% 70% 40%;
+  }
+  50% {
+    border-radius: 45% 70% 60% 40%/40% 60% 45% 70%;
+  }
+  100% {
+    border-radius: 60% 40% 45% 70%/60% 45% 70% 40%;
+  }
+}
+
+.morph {
+  animation: morph 8s ease-in-out infinite;
+  -webkit-animation: morph 8s ease-in-out infinite;
+}
+
+/* wave Hand in Hero Component  */
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation-name: spin-slow;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.rocket {
+  position: absolute;
+  bottom: -600px;
+  left: 35%;
+  animation: fly 10s 0.5s ease-in infinite;
+  -webkit-animation: fly 10s 0.5s ease-in infinite;
+}
+
+@keyframes fly {
+  0% {
+    bottom: -600px;
+  }
+
+  100% {
+    bottom: 100%;
+  }
+}
+
+.issendMessage {
+  background-color: green;
+  color: #fff;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
